@@ -154,8 +154,8 @@ dominated_count_adv
 # dominated count: 4
 
 # not dominated count
-notdominated_count <- length(which(result_adv == 0))
-notdominated_count
+notdominated_count_adv <- length(which(result_adv == 0))
+notdominated_count_adv
 # non-dominated count: 39
 
 # Let's highlight the dominated solutions on the plots
