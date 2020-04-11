@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585894615171.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3B1EB808",
+    "lastKnownWriteTime" : 1585403806,
+    "last_content_update" : 1585403806,
+    "path" : "~/Documents/SUTD/Term 5/ESA/Homework/Homework 1/ParetoSorting_adv.R",
+    "project_path" : "ParetoSorting_adv.R",
+    "properties" : {
+        "cursorPosition" : "27,19",
+        "scrollLine" : "5"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

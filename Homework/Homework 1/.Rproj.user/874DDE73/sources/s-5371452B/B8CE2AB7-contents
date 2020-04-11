@@ -157,32 +157,27 @@ index[403]
 
 
 # Task 9
-new_norm_data <- data.frame(Fatigue = fatigue_norm, Crashes = crashes_norm, Disruptions = disruptions_norm)
+df <- data.frame(Fatigue = fatigue_norm, Crashes = crashes_norm, Disruptions = disruptions_norm)
 utopia <- data.frame(Fatigue = 0, Crashes = 0, Disruptions = 0)
-selected <- data.frame(Fatigue = fatigue_norm[403], Crashes = crashes_norm[403], Disruptions = disruptions_norm[403])
-
-new_norm_data$cat <- "Pareto-efficient Solution"
+best_alt <- data.frame(Fatigue = fatigue_norm[index_min_dist], Crashes = crashes_norm[index_min_dist], Disruptions = disruptions_norm[index_min_dist])
+df$cat <- "Pareto-efficient Solution"
 utopia$cat <- "Utopia Point"
-selected$cat <- "Selected Solution"
+best_alt$cat <- "Selected Sollution"
 
-df <- rbind(new_norm_data, utopia, selected)
+new_data <- rbind(df, utopia, best_alt)
 
-t9_plot1 <- ggplot(data = df, mapping = aes(x = Fatigue, y = Crashes, size = Disruptions)) +
-  geom_point(aes(color=cat)) +
-  labs(title = "Task 9 Plot 1", x = "Fatigue", y = "Crashes")
+t9_plot1 <- ggplot(data = new_data, mapping = aes(x = Fatigue, y = Crashes, size = Disruptions)) +
+  geom_point(aes(color = cat)) +
+  labs(title = "Task 9 Plot 1", x = "Fatigue", y = "Crashes", caption = "Tour_de_France.csv")
 t9_plot1
 ggsave("T9 Plot1.pdf", t9_plot1)
 
 
 
 # Task 10
-max_val <- c(1, 1, 1)
-min_val <- c(0, 0, 0)
-selected_point <- selected[, 1:3]
-
-radar_data <- rbind(max_val, min_val, selected[, 1:3])
-t10_plot1 <- radarchart(df = radar_data, title = "Task 10 Plot 1: Best Alternative")
-legend(1, 1, lty = c(1, 2), lwd = c(2.5, 2.5), col = c("black"), c("Best Alternative"), cex = 0.4)
-
-
+df_radar <- best_alt[,1:3]
+max <- c(1, 1, 1)
+min <- c(0, 0 ,0)
+t10_plot1 <- radarchart(df = rbind(max, min, best_alt[,1:3]), title = "Task 10 Plot 1: Radar Chart of Best Alternative Solution")
+legend(1, 1, lty=c(1, 1), lwd = c(2.5, 2.5), col = c("black"), c("Alternative"), cex = 0.4)
 

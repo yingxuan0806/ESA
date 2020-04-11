@@ -1,3 +1,78 @@
+**Yeo Ying Xuan		1003835**
+
+40.014 Engineering Systems Architecture
+
+Term 5 2020
+
+Homework 1
+
+# Task 1
+
+<div style="page-break-after: always;"></div>
+
+# Task 2
+
+## Plot 1: Fatigue vs Crashes
+
+Based on linear regression model, increase in racing fatigue correlates to increase in expected crashes.
+
+## Plot 2: Fatigue vs Disruptions
+
+Based on linear regression model, increase in racing fatigue correlates to decrease in disruptions caused to the regular traffic.
+
+## Plot 3: Crashes vs Disruptions
+
+Based on linear regression model, increase in expected crashes correlates to decrease in disruptions caused to the regular traffic.
+
+<div style="page-break-after: always;"></div>
+
+# Task 3
+
+<div style="page-break-after: always;"></div>
+
+# Task 4
+
+The objective is to minimise racing fatigue, expected crashes and disruptions caused to the regular traffic.
+
+Based on the scatter plot produced in Task 3 above, majority of the dominated solutions are clustered around the middle left of the plot, as indicated by the data points with lighter shades of blue. Despite fatigue values being minimised and values of expected crashes are mid-range (around 11), disruption levels are much higher relative to other portions of plot.
+
+The plot below shows whether each solution is dominated or non-dominated.
+
+<div style="page-break-after: always;"></div>
+
+# Task 5
+
+Non-dominated alternatives = 475
+
+Dominated alternatives = 678
+
+# Task 6
+
+<div style="page-break-after: always;"></div>
+
+# Task 7
+
+Utopia vector = `[0.539508000 10.196563000  0.006677781`]
+
+Nadir vector = `[19.92032 12.69208 11.19780]`
+
+# Task 8
+
+Index of best alternative across all solutions = 1065
+
+minimum distance = 0.3555774
+
+# Task 9
+
+<div style="page-break-after: always;"></div>
+
+# Task 10
+
+<div style="page-break-after: always;"></div>
+
+# R-Script
+
+```R
 #Homework 1
 rm(list=ls())
 setwd("~/Documents/SUTD/Term 5/ESA/Homework/Homework 1")
@@ -183,6 +258,5 @@ selected_point <- selected[, 1:3]
 radar_data <- rbind(max_val, min_val, selected[, 1:3])
 t10_plot1 <- radarchart(df = radar_data, title = "Task 10 Plot 1: Best Alternative")
 legend(1, 1, lty = c(1, 2), lwd = c(2.5, 2.5), col = c("black"), c("Best Alternative"), cex = 0.4)
-
-
+```
 
