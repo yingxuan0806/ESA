@@ -6,12 +6,6 @@ Spring 2020
 
 Lecture 16
 
-**Table of Contents**
-
-[toc]
-
-<div style="page-break-after: always;"></div>
-
 # Activity 1a
 
 ```R

@@ -161,9 +161,11 @@ targets_1b <- c(125, 40, 55, 40)
 objective_1b <- c(1, 2, 3, 4)     # index for a particular problem object
 priority_1b <- c(1, 1, 1, 1)      # level to which the row (i.e. objective) is assigned
 # priority given to each deviation is equal: ie. set all values to 1
+# since in the objective function is summed, there is no point of setting different priority levels either
 p_1b <- c(0, 0, 3, 2)             # penalty associated with the positive deviation variable
 n_1b <- c(5, 4, 0, 0)             # penalty associated with the negative deviation variable
 w_1b <- c(4, 3, 1, 2)             # weight associated with the specific priority level
+# since no weight is given, set the w
 achievements_1b <- data.frame(objective=objective_1b, priority=priority_1b, p=p_1b, n=n_1b, w=w_1b)
 
 # To solve the problem, we use the function llgp
@@ -180,12 +182,12 @@ out_1b <- llgpout(soln_1b$tab, coefficients_1b, targets_1b)
 # 
 # Summary of objectives
 # Objective           Over          Under         Target
-# ...
-# ...
-# ...
-# ...
+# G1   1.250000e+02   0.000000e+00   0.000000e+00   1.250000e+02
+# G2   4.833333e+01   8.333333e+00   0.000000e+00   4.000000e+01
+# G3   5.500000e+01   0.000000e+00   0.000000e+00   5.500000e+01
+# G4   4.833333e+01   8.333333e+00   0.000000e+00   4.000000e+01 
 # 
 # Achievement function
 # A
-# ...
+# P1   1.666667e+01
 

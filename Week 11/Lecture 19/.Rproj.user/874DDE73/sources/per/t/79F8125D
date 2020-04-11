@@ -1,19 +1,19 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1586061535368.000,
-    "dirty" : true,
+    "created" : 1586624181146.000,
+    "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
-    "id" : "96A92EA4",
-    "lastKnownWriteTime" : 1586164320,
-    "last_content_update" : 1586171510048,
-    "path" : "~/Documents/SUTD/Term 5/ESA/Week 10/Lecture 17/Activity (student version).R",
+    "hash" : "2407236527",
+    "id" : "79F8125D",
+    "lastKnownWriteTime" : 1586596865,
+    "last_content_update" : 1586596865,
+    "path" : "~/Documents/SUTD/Term 5/ESA/Week 11/Lecture 19/Activity (student version).R",
     "project_path" : "Activity (student version).R",
     "properties" : {
-        "cursorPosition" : "191,19",
-        "scrollLine" : "167"
+        "cursorPosition" : "119,0",
+        "scrollLine" : "94"
     },
     "read_only" : false,
     "read_only_alternatives" : [
