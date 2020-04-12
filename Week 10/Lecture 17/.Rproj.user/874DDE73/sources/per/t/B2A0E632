@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1586715303385.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2574632612",
+    "id" : "B2A0E632",
+    "lastKnownWriteTime" : 1586718808,
+    "last_content_update" : 1586718808457,
+    "path" : "~/Documents/SUTD/Term 5/ESA/Week 10/Lecture 17/Activity (student version).R",
+    "project_path" : "Activity (student version).R",
+    "properties" : {
+        "cursorPosition" : "123,33",
+        "scrollLine" : "110"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
