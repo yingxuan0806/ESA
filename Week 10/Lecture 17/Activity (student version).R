@@ -91,7 +91,7 @@ out_1a <- llgpout(soln_1a$tab, coefficients_1a, targets_1a)
 # P2   0.000000e+00
 # P3   0.000000e+00
 # P4   1.666667e+01
-# amount of penalty paying for P4: 2 * the deviation 1.666667e+01
+# amount of penalty paying for P4: 2 * the deviation 8.333333e+00 (from summary above) = 1.666667e+01
 
 # Let's try with the following combinations of lexicographic ordering -- FILL IN THE LINES BELOW
 priority_1a2 <- c(1, 2, 3, 2) # giving second priority to both second and fourth goal
