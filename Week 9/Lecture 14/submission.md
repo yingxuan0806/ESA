@@ -1,5 +1,12 @@
-    
+Yeo Ying Xuan		1003835
 
+**Table of Contents**
+
+[toc]
+
+# R Script
+
+```R
 # Script for Activity 1 -- Lecture 14
 
 
@@ -154,8 +161,8 @@ dominated_count_adv
 # dominated count: 4
 
 # not dominated count
-notdominated_count_adv <- length(which(result_adv == 0))
-notdominated_count_adv
+notdominated_count <- length(which(result_adv == 0))
+notdominated_count
 # non-dominated count: 39
 
 # Let's highlight the dominated solutions on the plots
@@ -271,12 +278,29 @@ input[25,]
 
 mydata[8,]
 mydata[25,]
+```
 
 
 
+# Activity 1a
 
+## Plots
 
+<div style="page-break-after: always;"></div>
 
+## Answers to Questions
 
+Number of alternative solutions dominated
 
+- Horsepower vs Cost: 16 
+- Horsepower vs Cost vs Fuel-Efficiency: 4
 
+# Activity 1b
+
+## Plots
+
+<div style="page-break-after: always;"></div>
+
+# Activity 1c
+
+## Plots
